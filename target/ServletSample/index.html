@@ -1,20 +1,64 @@
-<html>
-<body>
-<h2>Servlet Example!</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<a href="firstServlet.jsp"> Example for GET and POST methods of Servlet</a>
-<br/> <br/>
-<a href="TestSessionServlet"> Test Session </a>
-<br/> <br/>
-<a href="Logout"> Logout from session </a>
-<br/>
-<br/>
-<a href="dataPlaceHolder.jsp"> Share data in "Request", "Session" and "ServletContext"</a>
-<br/>
-<br/>
-<a href="testDataPlaceHolderServlet"> Test data shared in session and servlet context</a>
-<br/>
-<br/>
-<p>&copy 2016 Preetham</p>
+<head>
+    <title>CoVinglish</title>
+    <meta charset="utf-8">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/ajax-show-table-vocabulary.js?ver=1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/theme-index.css?ver=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="container brand center">
+    <h1 class="brand-name"> CoVinglish </h1>
+</div>
+<div class="container" style="background:white;">
+    <div class="row sticky-top" style="margin-bottom: 50px; background:white">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-4">
+            <h2 id="nameLesson">1 - Contacts </h2> </span>
+        </div>
+        <div class="col-md-2">
+            <a class="border-btn" style="color: aliceblue" href="learnWords.jsp" >PRACTICE</a>
+        </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <table class="table table-condensed">
+                <thead>
+                <tr class="table-active">
+                    <th>No</th>
+                    <th>Category</th>
+                    <th>Vocabulary</th>
+                    <th>Pronounce</th>
+                    <th>Vietnamese</th>
+                </tr>
+                </thead>
+                <tbody id="row">
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+
 </body>
+
 </html>
